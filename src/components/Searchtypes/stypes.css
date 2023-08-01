@@ -1,0 +1,337 @@
+.Searchtypes {
+  width: 918px;
+  height: 102px;
+  flex-shrink: 0;
+
+  border-radius: 0px 20px 20px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
+  backdrop-filter: blur(10px);
+
+  position: absolute;
+  z-index: 99;
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+}
+
+.location {
+  text-align: center;
+  justify-content: center;
+
+  margin: 20px 0 20px 29px;
+}
+
+.location h2 {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 36px;
+  width: 76px;
+  margin: 0;
+}
+
+.location input {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.location svg {
+  width: 12px;
+  height: 14.667px;
+
+  margin: 0 0 0 9px;
+}
+
+.line {
+  width: 2px;
+  height: 46px;
+  margin: 32px 0 24px 20px;
+
+  background: #dcdceb;
+}
+
+.property {
+  text-align: center;
+  justify-content: center;
+
+  margin: 20px 0 20px 35px;
+}
+
+.property h2 {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+
+  height: 36px;
+  width: 123px;
+  margin: 0;
+}
+
+.property input {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+  border: 2px solid white;
+  border-radius: 10px;
+
+  width: 200px;
+}
+
+.property svg {
+  width: 12px;
+  height: 6px;
+
+  margin: 0 0 0 15px;
+}
+
+.pricerange {
+  text-align: center;
+  justify-content: center;
+
+  margin: 20px 0 20px 35px;
+}
+
+.pricerange h2 {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+
+  height: 36px;
+  width: 123px;
+  margin: 0;
+}
+
+.pricerange input {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.buttonactions {
+  display: flex;
+}
+
+.searchbutton {
+  margin: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbutton button {
+  height: 54px;
+  width: 54px;
+  background-image: url("./search-button.jpg");
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+}
+
+.searchbutton button:hover {
+  scale: 1.1;
+}
+
+.cancelbutton {
+  margin: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancelbutton button {
+  height: 34px;
+  width: 34px;
+  background-image: url("./cancel-button.jpg");
+  background-repeat: no-repeat;
+  background-size: 34px 34px;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.cancelbutton button:hover {
+  opacity: 100%;
+}
+
+.searchclose {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .Searchtypes {
+    width: 95vw;
+    height: auto;
+  }
+  .location,
+  .property,
+  .pricerange {
+    width: 50vw;
+    height: auto;
+
+    margin: 10px 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .line {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .Searchtypes {
+    position: relative;
+  }
+
+  .location,
+  .property,
+  .pricerange {
+    width: 100%;
+    height: auto;
+  }
+
+  .types {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 10px;
+
+    border-radius: 50px;
+    background-color: var(--color-lightblue);
+  }
+
+  .location h2,
+  .property h2,
+  .pricerange h2 {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .location input,
+  .property input,
+  .pricerange input {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+
+    padding: 10px 5px;
+  }
+
+  .location svg,
+  .property svg {
+    width: 30px;
+    height: 45px;
+
+    padding: 5px 0 0 0;
+  }
+
+  .line {
+    height: 2px;
+    width: 50vw;
+
+    margin: 10px 0 5px 0;
+  }
+
+  .buttonactions {
+    display: flex;
+  }
+
+  .searchbutton button {
+    height: 70px;
+    width: 70px;
+
+    background-repeat: no-repeat;
+    background-size: 70px;
+    border-radius: 10px;
+
+    margin: 20px 0;
+  }
+
+  .cancelbutton button {
+    height: 70px;
+    width: 70px;
+
+    background-repeat: no-repeat;
+    background-size: 70px;
+    border-radius: 35px;
+
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .Searchtypes {
+    width: 80vw;
+  }
+
+  .location h2,
+  .property h2,
+  .pricerange h2 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .location input,
+  .property input,
+  .pricerange input {
+    height: 40px;
+    font-size: 18px;
+    padding: 10px 5px;
+  }
+
+  .location svg,
+  .property svg {
+    width: 22px;
+    height: 30px;
+
+    padding: 5px 0 0 0;
+  }
+
+  .searchbutton button {
+    height: 50px;
+    width: 50px;
+
+    background-size: 50px;
+    border-radius: 15px;
+  }
+  .cancelbutton button {
+    height: 40px;
+    width: 40px;
+
+    background-size: 40px;
+    border-radius: 25px;
+  }
+}

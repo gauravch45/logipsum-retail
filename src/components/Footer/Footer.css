@@ -1,0 +1,158 @@
+.Footer {
+  width: 98vw;
+  height: auto;
+
+  margin: 5rem 0 2rem 0;
+  display: flex;
+}
+
+.footer-container {
+  width: 98%;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer-sec1,
+.footer-sec2,
+.footer-sec3,
+.footer-sec4 {
+  flex-direction: column;
+}
+
+.footer-sec1 p {
+  width: 410px;
+
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 34px;
+}
+
+.social-facebook {
+  margin-right: 28px;
+}
+
+.social-twitter {
+  margin-right: 28px;
+}
+
+.social-insta {
+  margin-right: 28px;
+}
+
+.rights {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-sec2 h2 {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+
+  margin: 0;
+}
+
+.footer-sec2 p {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer-sec3 h2 {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+
+  margin: 0;
+}
+
+.footer-sec3 p {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer-sec4 h2 {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+
+  margin: 0;
+}
+
+.footer-sec4 p {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+
+  width: 70%;
+}
+
+.sec4-email input {
+  width: 227px;
+  height: 54px;
+  border-radius: 15px;
+  border: 2px solid #d0d0e3;
+  background: #fff;
+  padding-left: 15px;
+
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.sec4-email button {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  right: 40px;
+
+  border-radius: 20px 20px;
+  border: 0;
+  background-color: #1daeff;
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}

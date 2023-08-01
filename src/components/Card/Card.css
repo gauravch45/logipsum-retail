@@ -1,0 +1,116 @@
+.card {
+  width: 550px;
+  height: 249px;
+  margin: 10px 0 10px 0;
+
+  display: flex;
+
+  border-radius: 30px;
+  border: 1px solid #1daeff;
+  background: #fff;
+  box-shadow: 0px 17px 50px 0px rgba(143, 144, 166, 0.32);
+  animation-duration: 1;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card1-image {
+  margin: 29px 0 29px 36px;
+  width: 158px;
+  height: 191px;
+
+  border-radius: 20px;
+}
+
+.card-text {
+  margin: 29px 0 0 36px;
+}
+
+.card-maintext {
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+.card-subtext {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footertext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footertext p {
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.card-footertext button {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+
+  width: 108px;
+  height: 41px;
+
+  border: none;
+  border-radius: 10px;
+  background: #8f90a6;
+}
+
+.card-footertext button:hover {
+  background-color: var(--color-lightblue);
+
+  color: #110229;
+}
+
+@media (max-width: 610px) {
+  .card {
+    width: 90vw;
+    height: auto;
+  }
+
+  .card-text {
+    margin-left: 18px;
+  }
+
+  .card1-image {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .card-maintext {
+    font-size: 25px;
+    flex-wrap: wrap;
+  }
+
+  .card-subtext p {
+    font-size: 14px;
+    justify-content: space-evenly;
+  }
+
+  .card-footertext button {
+    width: 85px;
+    font-size: 16px;
+  }
+}

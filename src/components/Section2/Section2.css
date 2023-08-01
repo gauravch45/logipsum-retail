@@ -1,0 +1,140 @@
+.Section2 {
+  margin-top: 13rem;
+
+  height: auto;
+  width: 98vw;
+}
+
+.section2-text {
+  color: #110229;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  width: 100%;
+  height: 100px;
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 56px;
+}
+
+.america {
+  width: 278px;
+  height: 426px;
+
+  border-radius: 30px;
+  background: url("./rectangle9.png"), lightgray 50% / cover no-repeat;
+
+  cursor: pointer;
+}
+
+.america > p {
+  color: #110229;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+
+  padding-top: 30px;
+}
+
+.spain {
+  width: 278px;
+  height: 426px;
+  margin-left: 30px;
+
+  border-radius: 30px;
+  background: url("./rectangle10.png"), lightgray 50% / cover no-repeat;
+
+  cursor: pointer;
+}
+
+.spain > p {
+  color: #110229;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+
+  padding-top: 30px;
+}
+
+.london {
+  width: 278px;
+  height: 426px;
+  margin-left: 30px;
+
+  border-radius: 30px;
+  background: url("./rectangle11.png"), lightgray 50% / cover no-repeat;
+
+  cursor: pointer;
+}
+
+.london > p {
+  color: #110229;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+
+  padding-top: 30px;
+}
+
+.france {
+  width: 278px;
+  height: 426px;
+  margin-left: 30px;
+
+  border-radius: 30px;
+  background: url("./rectangle12.png"), lightgray 50% / cover no-repeat;
+
+  cursor: pointer;
+}
+
+.france > p {
+  color: #110229;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+
+  padding-top: 30px;
+}
+
+@media (max-width: 1230px) {
+  .rectangle {
+    flex-wrap: wrap;
+  }
+
+  .america,
+  .spain,
+  .london,
+  .france {
+    margin: 10px 10px 10px 10px;
+  }
+}

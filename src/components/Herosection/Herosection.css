@@ -1,0 +1,257 @@
+.Herosection {
+  width: 98vw;
+  height: 633.76px;
+  padding: 39px 0 0 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.Herosection-content {
+  width: 95%;
+  height: auto;
+}
+
+.herosection-background {
+  width: 100%;
+  height: auto;
+}
+
+.Herosection-content img {
+  max-width: 1440px;
+
+  border-radius: 50px;
+  position: absolute;
+  z-index: -1;
+}
+
+.content-text {
+  width: 490px;
+  height: 257px;
+  padding: 50px 0 0 92px;
+}
+
+.content-text h1 {
+  opacity: 0;
+
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content-text p {
+  scale: 0;
+
+  color: #585981;
+  font-family: var(--font-base);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.Herosection-searchbar {
+  width: 918px;
+  height: 141px;
+  flex-shrink: 0;
+
+  margin: 101px 0 0 92px;
+}
+
+.searchbar-searchtab {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.searchtab {
+  width: 102px;
+  height: 39px;
+  padding: 10px 0 10px 0;
+  border: 0;
+  border-radius: 15px;
+
+  color: #8f90a6;
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  text-align: center;
+  margin: 0;
+}
+
+.active {
+  width: 102px;
+  height: 39px;
+  padding: 10px 0 10px 0;
+  border-radius: 15px 15px 0px 0px;
+  border: 0;
+  color: #110229;
+  font-family: var(--font-base);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #f9f9f9;
+
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+  border: 0;
+}
+
+@media (max-width: 1440px) {
+  .Herosection-content img {
+    width: 95vw;
+    height: auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Herosection {
+    margin: 30px 0;
+  }
+  .Herosection-content {
+    padding: 0 10px 0 10px;
+  }
+
+  .Herosection-searchbar {
+    padding: 180px 0 0 0;
+    margin-left: 0;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: var(--color-lightblue);
+    color: #f9f9f9;
+  }
+
+  .active {
+    background-color: var(--color-lightblue);
+  }
+}
+
+@media (max-width: 1000px) {
+  .Herosection {
+    margin-top: 100px;
+  }
+  .content-text {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+
+    text-align: center;
+  }
+
+  .content-text p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .Herosection-content img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .content-text {
+    width: 95vw;
+    height: auto;
+    text-align: center;
+  }
+
+  .content-text h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .content-text p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .Herosection-searchbar {
+    width: 100%;
+    height: auto;
+
+    margin: 50px 0 0 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .searchbar-searchtab {
+    width: 80vw;
+    height: auto;
+    justify-content: center;
+  }
+
+  .searchtab-rent button,
+  .searchtab-buy button,
+  .searchtab-sell button {
+    width: 20vw;
+    height: 80px;
+    font-size: 22px;
+  }
+
+  .search-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+  }
+
+  .dropdown-content {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .Herosection {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .Herosection-content img {
+    width: 95vw;
+    height: auto;
+  }
+
+  .Herosection-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-text h1 {
+    font-size: 35px;
+  }
+
+  .content-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+}
