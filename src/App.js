@@ -35,8 +35,8 @@ function App() {
   return (
     <div className="App" id="home">
       <Header input={loginStatus} />
-      {login === true ? <Login /> : null}
-      <Herosection />
+      {login === true ? <Login /> : <Herosection />}
+      
       <Section2 />
       <Section3 />
       <Section4 />
