@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/logipsum-retail/static/css/main.d9c8d7d3.css",
-    "main.js": "/logipsum-retail/static/js/main.0aab275e.js",
+    "main.css": "/logipsum-retail/static/css/main.b0898e53.css",
+    "main.js": "/logipsum-retail/static/js/main.69b98934.js",
     "static/media/hero-background.png": "/logipsum-retail/static/media/hero-background.86bfc3440ecbdf7ec7f2.png",
     "static/media/background.png": "/logipsum-retail/static/media/background.cc9582a6a123f2a3f167.png",
     "static/media/rectangle10.png": "/logipsum-retail/static/media/rectangle10.e4e0fd6a09f3aae361ec.png",
@@ -16,11 +16,11 @@
     "static/media/card2.png": "/logipsum-retail/static/media/card2.372a86dcbe3b0b44438b.png",
     "static/media/card1.png": "/logipsum-retail/static/media/card1.c92b5a879c1b02336139.png",
     "index.html": "/logipsum-retail/index.html",
-    "main.d9c8d7d3.css.map": "/logipsum-retail/static/css/main.d9c8d7d3.css.map",
-    "main.0aab275e.js.map": "/logipsum-retail/static/js/main.0aab275e.js.map"
+    "main.b0898e53.css.map": "/logipsum-retail/static/css/main.b0898e53.css.map",
+    "main.69b98934.js.map": "/logipsum-retail/static/js/main.69b98934.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9c8d7d3.css",
-    "static/js/main.0aab275e.js"
+    "static/css/main.b0898e53.css",
+    "static/js/main.69b98934.js"
   ]
 }
