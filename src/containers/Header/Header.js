@@ -1,8 +1,15 @@
-import Navbar from "../Navbar/Navbar";
-
+import { useState } from "react";
+import Navbar from "../../components/Navbar/Navbar";
 import "./Header.css";
 
-function Header() {
+function Header({ input }) {
+  const [islogin, setIsLogin] = useState(false);
+
+  const loginStatus = (value) => {
+    setIsLogin(value);
+    input(value);
+  };
+
   return (
     <div className="Header">
       <div className="header-container">
@@ -75,7 +82,7 @@ function Header() {
           </svg>
         </div>
         <div className="Header-Menu">
-          <Navbar />
+          <Navbar input={loginStatus} />
         </div>
       </div>
     </div>

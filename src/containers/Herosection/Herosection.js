@@ -1,4 +1,4 @@
-import Searchtypes from "../Searchtypes/Searchtypes";
+import Searchtypes from "../../components/Searchtypes/Searchtypes";
 import gsap from "gsap";
 import React, { useState, useRef, useEffect } from "react";
 import house from "./hero-background.png";
@@ -23,7 +23,15 @@ function Herosection() {
   }, []);
 
   const searchOptions = (input) => {
-    setSelectedOption(input);
+    if (
+      selectedOption === "rent" ||
+      selectedOption === "buy" ||
+      selectedOption === "sell"
+    ) {
+      setSelectedOption(null);
+    } else {
+      setSelectedOption(input);
+    }
   };
 
   const handleSearchTypeChange = (value) => {

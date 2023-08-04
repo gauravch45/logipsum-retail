@@ -2,15 +2,19 @@ import { useState } from "react";
 
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ input }) {
   const [click, setClick] = useState(false);
+
+  const setStatus = () => {
+    input(true);
+  };
 
   return (
     <div className="Navbar-container">
       <nav className="Navbar">
         <ul className={click ? "Navbar-active" : "Navbar-un"}>
           <li className="Navbar-list">
-            <a href="\">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li className="Navbar-list">
             <a href="#properties">Properties</a>
@@ -22,7 +26,9 @@ function Navbar() {
             <a href="#blog">Blog</a>
           </li>
           <li>
-            <button className="login-button">LOG IN</button>
+            <button className="login-button" onClick={setStatus}>
+              LOG IN
+            </button>
           </li>
         </ul>
 
